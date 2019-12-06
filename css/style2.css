@@ -1,0 +1,325 @@
+/*  HELPER ELEMENTS*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+a:active,a:hover,a{
+    text-decoration: none;
+    color: unset;
+}
+
+ul{
+    list-style-type: none !important;
+}
+/*  HELPER ELEMENTS*/
+
+
+/*NAVBAR*/
+
+nav{
+    font-family: century gothic;
+    color: black;
+    background: #fff;
+    display: flex;
+    height: 10vh;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+@media(min-width:600px){
+.navb{
+    color: #2f4454;
+    font-size:140%;
+}
+}
+nav p, nav a, #togglebar{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+nav p{
+    font-size: 150%;
+    letter-spacing: 0em;
+    font-weight: 600;
+}
+#togglebar{
+    display: none;
+}
+/* PHOTOS  */
+.backphoto{
+    background: url("../images/img2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+@media (min-width:700px){
+#sidebar{
+position: absolute;
+width: 500px;
+left: -500px;
+box-sizing: border-box;
+
+}
+}
+nav ul{
+    list-style-type: none;
+    padding-left: unset;
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    flex: 0.6;
+    margin-top: 0%
+}
+nav div{
+    display: flex;
+    flex: 1;
+}
+/*NAVBAR*/
+
+
+/*NAVBAR RESPONSIVE*/
+@media (max-width:600px){
+.navel a{   
+display: none;
+}
+
+#togglebar{
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;}
+
+#sidebar{
+    font-size: 12px;
+    box-sizing: border-box;
+    background: #fff;
+    height: 100%;
+    position: fixed;
+    right: -250px;
+    width: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 1s;
+}
+.activeside{
+right: 0 !important;
+}
+#sidebar div{
+    padding-top: 20%
+}
+
+#sidebar div a{
+    width: 100%;
+    display: block;
+    margin-bottom: 20%;
+}
+
+
+
+
+}
+
+/*  CAROUSEL CSS*/
+#section1{
+    margin: 0;
+    background-attachment: fixed;
+    height: 90vh;
+    width: 100%;
+    background: url(../images/hotelback.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    }
+
+
+section{
+margin-top: 5%;
+}
+
+#section1 ul{
+    width: 100%;
+}
+
+
+/*RESERVATIONS  */
+.row div{
+padding: 2%;
+}
+.row div div{
+    padding: 0
+}
+.roompic{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#kingsize{
+background-image: url("../images/kingsize.jpg");
+background-position: center;
+background-size: cover;
+height: 40vh;}
+#penthouse{
+background-image: url("../images/penthouse.jpg");
+background-position: center;
+background-size: cover;
+height: 40vh;
+}
+#regular{
+background-image: url("../images/regular.jpg");
+background-position: center;
+background-size: cover;
+height: 40vh;
+}
+@media(min-width:600px) {
+    #contact{
+        margin: 5% 10%;
+    }
+}
+
+#bookings h5{
+background:black;
+width: 100%;
+height: 100% !important;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #fff;
+font-family: century gothic;
+}
+
+.services{
+    text-align: center;
+}
+.services ul{
+    padding-left: unset;
+
+}
+.services ul li{
+    padding: 1% 2%;
+} 
+.services ul li div {
+     background-color: black;
+    color: #fff;
+}
+
+.reservation{
+    color: #fff;
+    font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 360px;
+    padding: 35px 15px !important;
+
+}
+
+.reservation:hover{
+    background: #A8D0E6;
+}
+
+@media (max-width: 600px) {
+#send-message{
+    padding: 0% 8%;
+    width: 100%;
+
+}
+}
+
+/*CONTACT US SECTION*/
+
+#contact{
+    margin-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+@media (min-width:600px) {
+    #contact-info{
+        padding: 2% 10%; 
+        text-align:left;
+        }
+    
+}
+
+ul p{
+    margin-bottom: 8%;
+    font-weight: 900;
+}
+
+@media (max-width:600px) {
+#send-message{
+padding: unset;
+margin-left: 10%;
+margin-right: 10%;
+}
+}
+#send-message{
+margin: unset 5% !important; 
+border: 1px solid black;
+border-radius: 2px;
+height: 60vh;
+}
+input{
+display: block;
+width: 70%;
+height: 7%;
+margin:0% 15% 5% 15%;    
+}
+textarea{
+width: 70%;
+height: 30%;
+margin-bottom:5%;    
+}
+input[type="submit"]{
+ background: black;
+ color: #fff;
+ width: 60%;
+ height: 35px;
+ margin-top: 3%;
+ border-radius: 20px;
+ margin-left: 20%;
+ margin-right: 20%;
+}
+
+/*FOOTER*/
+#footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0 auto !important;
+    box-sizing: 
+    margin-bottom: 0;
+    height: 48px;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+#footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15%;
+}
+
+#footer ul{
+    display: flex;
+    flex-direction: row;
+    padding: unset;
+    justify-content: space-around;
+    margin: unset 15%;
+
+}
+#footer ul li i{
+    font-size: 30px;
+    
+}
+
+/*RESPONSIVE*/
+
+
